@@ -19,7 +19,7 @@ declare module 'ml-pca' {
   }
 
   export class PCA {
-    constructor(dataset: number[][] | Matrix, options?: IPCAOptions);
+    constructor(dataset: number[][] | Matrix | boolean, options?: IPCAOptions);
     static load(model: IPCAModel): PCA;
     predict(dataset: number[][] | Matrix, options?: IPredictOptions): Matrix;
     invert(dataset: number[][] | Matrix): Matrix;
